@@ -1,0 +1,16 @@
+[user]
+	name = Firstname Lastname
+	email = username@myEmail.com
+[alias]
+	co = checkout
+    b = branch
+    pu = push -u origin HEAD
+    ci = commit
+    st = status
+	rename = branch -m
+	rn = rename
+	age = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+[core]
+    editor = vim
+[push]
+	default = simple
